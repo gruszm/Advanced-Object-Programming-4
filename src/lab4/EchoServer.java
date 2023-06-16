@@ -1,3 +1,5 @@
+package lab4;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -20,7 +22,7 @@ public class EchoServer
             while (!line.equals("bye"))
             {
                 line = sc.nextLine();
-                pw.println("Serwer: " + line.toUpperCase());
+                pw.println(line.toUpperCase());
                 System.out.println("Klientowi odsyłam linie: " + line);
             }
             socket.close();
